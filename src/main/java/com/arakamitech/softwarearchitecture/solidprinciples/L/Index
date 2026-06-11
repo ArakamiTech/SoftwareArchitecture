@@ -1,0 +1,25 @@
+L - Liskov Substitution Principle (LSP)
+Una clase hija debe poder sustituir a la clase padre sin romper el comportamiento 
+esperado
+
+               +------+
+               | Ave  |
+               +------+
+                  ^
+                  |
+      +-----------+-----------+
+      |                       |
++------------+         +------------+
+| Aguila     |         | Pinguino   |
++------------+         +------------+
+
++-----------+
+| Volador   |
++-----------+
+| volar()   |
++-----------+
+      ^
+      |
++------------+
+| Aguila     |
++------------+

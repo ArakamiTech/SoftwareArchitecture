@@ -1,0 +1,17 @@
+I - Interface Segregation Principle (ISP)
+Una clase no debe estar obligada a implementar metodos que no necesita
+
++-------------+ +-------------+ +-------------+
+| Trabajable  | | Comible     | | Dormible    |
++-------------+ +-------------+ +-------------+
+| trabajar()  | | comer()     | | dormir()    |
++-------------+ +-------------+ +-------------+
+  ^     ^               ^               ^       
+  |     |               |               |
+  |     +----------+----+               |
+  |     | Persona  |--------------------+
+  |     +----------+
+  |                      
+  |     +---------               
+  +-----| Robot  |
+        +--------+

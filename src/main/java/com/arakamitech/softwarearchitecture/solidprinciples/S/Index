@@ -1,0 +1,20 @@
+S - Single Responsability
+Una clase debe tener una unica responsabilidad (una unica razon para cambiar)
+
++------------------+
+| UsuarioService   |
++------------------+
+| guardarUsuario() |
++------------------+
+
++------------------+
+| EmailService     |
++------------------+
+| enviarCorreo()   |
++------------------+
+
++------------------+
+| ReporteService   |
++------------------+
+| generarReporte() |
++------------------+

@@ -1,0 +1,21 @@
+O - Open / Closed Principle
+Una clase debe ser abierta para su extensión pero cerrada para su modificación
+
+                 +-------------+
+                 | Descuento   |
+                 +-------------+
+                 | calcular()  |
+                 +-------------+
+                        ^
+                        |
+        +---------------+---------------+
+        |                               |
++-------------------+      +-------------------+
+| DescuentoVip      |      | DescuentoNormal   |
++-------------------+      +-------------------+
+
+                        ^
+                        |
+                +------------------+
+                | DescuentoService |
+                +------------------+

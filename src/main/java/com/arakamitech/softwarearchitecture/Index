@@ -1,0 +1,17 @@
+¿Qué son los principios SOLID?
+
+SOLID es un conjunto de 5 principios de diseño orientado a objetos propuestos por Robert C. Martin para crear software:
+
+Más fácil de mantener.
+Más fácil de extender.
+Menos acoplado.
+Más fácil de probar.
+
+SOLID significa:
+
+Letra	Principio
+S	Single Responsibility Principle
+O	Open/Closed Principle
+L	Liskov Substitution Principle
+I	Interface Segregation Principle
+D	Dependency Inversion Principle
