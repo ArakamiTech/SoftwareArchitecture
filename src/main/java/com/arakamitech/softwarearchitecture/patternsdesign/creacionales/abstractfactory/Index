@@ -1,0 +1,36 @@
+PATRON ABSTRACT FACTORY
+
+Permite la creacion de objetos de una misma familia
+
+                              ┌------------------┐
+                              │ DatabaseFactory  │
+                              │ <<interface>>    │
+                              ├─────────────────────┤
+                              │+crearConexion()  │
+                              │+crearQuery()     │
+                              └------------------┘
+                                      ▲
+                                      │
+                        ┌---------------------------┐
+                        │                           │
+                ┌-------------------┐      ┌----------------┐
+                │     MySQLFactory  │      │  OracleFactory │
+                └-------------------┘      └----------------┘
+                        │                            │
+             crea       │                            │       crea
+                        │ -------------------------- │
+                        ▼                           ▼
+                ┌---------------┐             ┌--------------┐
+                │   Conexion    │             │    Query     │
+                │ <<interface>> │             │ <<interface>>│
+                ├---------------┤             ├--------------┤
+                │ + conectar()  │             │+ ejecutar()  │
+                └---------------┘             └--------------┘
+                ▲           ▲                 ▲             ▲
+                │            │                  │             │
+        ┌---------------┐ ┌-----------------┐ ┌-------------┐ ┌--------------┐
+        │ ConexionMySQL │ │ ConexionOracle  │ │ QueryMySQL  │ │ QueryOracle  │
+        └---------------┘ └-----------------┘ └-------------┘ └--------------┘
+        
+        
+           

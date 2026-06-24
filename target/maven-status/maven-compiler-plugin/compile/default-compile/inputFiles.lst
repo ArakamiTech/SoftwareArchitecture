@@ -1,5 +1,9 @@
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\O\DescuentoVIP.java
+C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\abstractfactory\impl\ConexionMySQL.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\I\Persona.java
+C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\abstractfactory\OracleFactory.java
+C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\abstractfactory\impl\IQuery.java
+C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\abstractfactory\impl\QueryOracle.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\S\UsuarioService.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\I\Robot.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\factory\impl\IConexion.java
@@ -7,6 +11,7 @@ C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\L\Aguila.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\S\EmailService.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\factory\impl\ConexionMySQL.java
+C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\abstractfactory\IDatabaseFactory.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\O\Descuento.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\factory\ConexionFactory.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\I\Comible.java
@@ -17,10 +22,14 @@ C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\factory\impl\ConexionOracle.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\O\DescuentoService.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\I\Dormible.java
+C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\abstractfactory\impl\IConexion.java
+C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\abstractfactory\impl\QueryMySQL.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\D\MySqlRepository.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\D\UsuarioInterface.java
+C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\abstractfactory\impl\ConexionOracle.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\S\ReporteService.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\SoftwareArchitecture.java
+C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\patternsdesign\creacionales\abstractfactory\MySQLFactory.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\D\OracleRepository.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\S\UsuarioEntity.java
 C:\Users\crist\Documents\Java\SoftwareArchitecture\src\main\java\com\arakamitech\softwarearchitecture\solidprinciples\L\Pinguino.java

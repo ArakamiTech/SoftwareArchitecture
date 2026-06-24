@@ -1,5 +1,10 @@
 package com.arakamitech.softwarearchitecture;
 
+import com.arakamitech.softwarearchitecture.patternsdesign.creacionales.abstractfactory.IDatabaseFactory;
+import com.arakamitech.softwarearchitecture.patternsdesign.creacionales.abstractfactory.MySQLFactory;
+import com.arakamitech.softwarearchitecture.patternsdesign.creacionales.abstractfactory.OracleFactory;
+import com.arakamitech.softwarearchitecture.patternsdesign.creacionales.abstractfactory.impl.IQuery;
+import com.arakamitech.softwarearchitecture.patternsdesign.creacionales.abstractfactory.impl.QueryMySQL;
 import com.arakamitech.softwarearchitecture.patternsdesign.creacionales.factory.ConexionFactory;
 import com.arakamitech.softwarearchitecture.patternsdesign.creacionales.factory.impl.IConexion;
 import com.arakamitech.softwarearchitecture.solidprinciples.D.MySqlRepository;
@@ -83,14 +88,32 @@ public class SoftwareArchitecture {
 
     //PATRONES DE DISEÑO
     //CREACIONALES
-    public static void factory(){
+    public static void factory() {
         ConexionFactory conexionFactory = new ConexionFactory();
         IConexion conexionOracle = conexionFactory.obtenerConexion("ORACLE");
         IConexion conexionMysql = conexionFactory.obtenerConexion("MYSQL");
         conexionOracle.Conectar();
         conexionMysql.Conectar();
     }
-    
+
+    public static void abstractFactory() {
+        IDatabaseFactory iDatabaseFactory = new MySQLFactory();
+        com.arakamitech.softwarearchitecture.patternsdesign.creacionales.abstractfactory.impl.IConexion conexionMySQL
+                = iDatabaseFactory.conexion();
+        IQuery queryMySQL = iDatabaseFactory.ejecutarQuery();
+
+        conexionMySQL.conexion();
+        queryMySQL.ejecutarQuery();
+
+        IDatabaseFactory iDatabaseFactoryOracle = new OracleFactory();
+        com.arakamitech.softwarearchitecture.patternsdesign.creacionales.abstractfactory.impl.IConexion conexionOracle
+                = iDatabaseFactoryOracle.conexion();
+        IQuery queryOracle = iDatabaseFactoryOracle.ejecutarQuery();
+
+        conexionOracle.conexion();
+        queryOracle.ejecutarQuery();
+    }
+
     public static void main(String[] args) {
         S();
         O();
@@ -98,5 +121,6 @@ public class SoftwareArchitecture {
         I();
         D();
         factory();
+        abstractFactory();
     }
 }
