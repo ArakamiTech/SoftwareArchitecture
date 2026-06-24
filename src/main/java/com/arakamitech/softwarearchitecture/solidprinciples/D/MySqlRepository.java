@@ -1,9 +1,5 @@
 package com.arakamitech.softwarearchitecture.solidprinciples.D;
 
-/**
- *
- * @author cristhian
- */
 public class MySqlRepository implements UsuarioInterface {
 
     @Override

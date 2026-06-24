@@ -1,9 +1,5 @@
 package com.arakamitech.softwarearchitecture.solidprinciples.S;
 
-/**
- *
- * @author cristhian
- */
 public class UsuarioEntity {
     private Long id;
     private String numeroIdentificacion;

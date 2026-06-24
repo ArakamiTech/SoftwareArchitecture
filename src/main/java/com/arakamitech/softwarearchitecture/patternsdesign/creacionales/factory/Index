@@ -1,0 +1,39 @@
+PATRON FACTORY
+
+Permite la creacion de objetos de un subtipo determinado a traves de una clase Factory.
+Se pueden crear instancias dinamicamente mediante la configuracion estableciendo
+cual sera la implementacion a utilizar
+
+                  +----------------------+
+                  | IConexion            |
+                  +----------------------+
+                  | conectar()           |
+                  +----------------------+
+                            ^
+                            |
+          +-----------------+-----------------+
+          |                                   |
++-------------------------+      +--------------------------+
+|    ConexionMySQL        |      |    ConexionOracle        |
++-------------------------+      +--------------------------+
+| + conectar()            |      | + conectar()             |
++-------------------------+      +--------------------------+
+                            ▲
+                            │ crea
+                            │
+              +-------------------------------+
+              |      ConexionFactory          |
+              +-------------------------------+
+              | - conexiones : Map<String,    |
+              |                Conexion>      |
+              +-------------------------------+
+              | + obtenerConexion(tipo)       |
+              +-------------------------------+
+                            ▲
+                            │ usa
+                            │
+                     +---------------+
+                     |     Main      |
+                     +---------------+
+                     | + main()      |
+                     +---------------+

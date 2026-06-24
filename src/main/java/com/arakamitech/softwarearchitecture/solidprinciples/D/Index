@@ -1,7 +1,8 @@
 D - Dependency Inversion Principle (DIP)
 Un modulo de alto nivel no debe depender de un modulo de bajo nivel. 
 Ambos deben depender de una Abstraccion.
-Para multiples implementaciones dinamicas es recomendable usar el patron de diseño Factory
+Para multiples implementaciones dinamicas es recomendable usar el patron de diseño 
+Factory o Strategy
 
                   +----------------------+
                   | UsuarioRepository    |

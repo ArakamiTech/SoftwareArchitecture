@@ -15,3 +15,11 @@ O	Open/Closed Principle
 L	Liskov Substitution Principle
 I	Interface Segregation Principle
 D	Dependency Inversion Principle
+
+¿Que son los patrones de diseño?
+
+Son plantillas que sugieren una solución a un problema de diseño habitual
+Se divide en:
+Patrones de Comportamiento
+Patrones Creacionales
+Patrones Estructurales

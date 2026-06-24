@@ -1,9 +1,5 @@
 package com.arakamitech.softwarearchitecture.solidprinciples.L;
 
-/**
- *
- * @author cristhian
- */
 public class Aguila extends Ave implements Volador {
 
     @Override

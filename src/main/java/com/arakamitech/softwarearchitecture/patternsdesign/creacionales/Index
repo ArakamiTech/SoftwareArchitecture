@@ -1,0 +1,5 @@
+PATRONES CREACIONALES
+
+Son patrones de diseño que controlan la forma en que se crean objetos, para que
+no se creen de forma directa, permitiendo que el codigo sea mas flexible y
+reutilizable

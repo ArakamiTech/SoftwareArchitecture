@@ -1,9 +1,5 @@
 package com.arakamitech.softwarearchitecture.solidprinciples.S;
 
-/**
- *
- * @author cristhian
- */
 public class ReporteService {
 
     public void generarReporte() {

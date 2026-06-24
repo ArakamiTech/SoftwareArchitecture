@@ -1,8 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 package com.arakamitech.softwarearchitecture;
 
+import com.arakamitech.softwarearchitecture.patternsdesign.creacionales.factory.ConexionFactory;
+import com.arakamitech.softwarearchitecture.patternsdesign.creacionales.factory.impl.IConexion;
 import com.arakamitech.softwarearchitecture.solidprinciples.D.MySqlRepository;
 import com.arakamitech.softwarearchitecture.solidprinciples.D.OracleRepository;
 import com.arakamitech.softwarearchitecture.solidprinciples.D.UsuarioService;
@@ -24,12 +23,9 @@ import com.arakamitech.softwarearchitecture.solidprinciples.S.EmailService;
 import com.arakamitech.softwarearchitecture.solidprinciples.S.ReporteService;
 import com.arakamitech.softwarearchitecture.solidprinciples.S.UsuarioEntity;
 
-/**
- *
- * @author cristhian
- */
 public class SoftwareArchitecture {
 
+    //PRINCIPIOS SOLID
     public static void S() {
         UsuarioEntity usuario = new UsuarioEntity();
         usuario.setId(Long.MIN_VALUE);
@@ -85,11 +81,22 @@ public class SoftwareArchitecture {
         usuarioService2.guardarUsuarioMysql();
     }
 
+    //PATRONES DE DISEÑO
+    //CREACIONALES
+    public static void factory(){
+        ConexionFactory conexionFactory = new ConexionFactory();
+        IConexion conexionOracle = conexionFactory.obtenerConexion("ORACLE");
+        IConexion conexionMysql = conexionFactory.obtenerConexion("MYSQL");
+        conexionOracle.Conectar();
+        conexionMysql.Conectar();
+    }
+    
     public static void main(String[] args) {
         S();
         O();
         L();
         I();
         D();
+        factory();
     }
 }
